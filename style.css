@@ -149,7 +149,7 @@
     width: 60%;
     background-color: #fafbfe;
 }
-.right1 img {
+.right-1 img {
     width: 303px;
     height: 250px;
     
@@ -308,13 +308,8 @@
         background-color: #fafbfe;
         margin-left: 2.5%;
     }
-    .right1 {
+    .right-1 img {
         display: none;
-    }
-    .right1 img {
-        display: none;
-        width: 0px;
-        height: 0px;
     }
     .left2 {
         margin-left: 30px;
