@@ -337,6 +337,7 @@
     .right1 {
         background-color: #f4f4f4;
         height: 200px;
+        display: block;
     }
     .content-right {
         width:95%;
