@@ -148,7 +148,7 @@
     width: 260px;
     background-color: #130f40;
     transform: translateX(-100%);
-    transition: 0.5s ease-in-out;
+    transition: 0.8s ease;
 }
 .checkbox:checked ~ .bars-menu {
     transform: translateX(0%);
