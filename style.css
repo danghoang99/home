@@ -543,6 +543,10 @@
     .select {
         font-size: 13px;
         width: 130px;
+        border: none;
+        background-color: #130f40;
+        color: #ccc;
+        cursor: pointer;
     }
     .container-login3 {
         width: 100%;
