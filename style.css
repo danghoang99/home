@@ -20,6 +20,63 @@
 .container-login2 {
     line-height: 35px;
 }
+.container-login3 {
+    width: 446px;
+    height: 481px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 0 auto;
+    text-align: center;
+}
+.container-login4 {
+   line-height: 30px;
+}
+.container-login4 img {
+    height: 50px;
+    border-bottom: 2px solid #ef5074;
+    margin-top: 20px;
+}
+.container-login4 h4 {
+    font-size: 28px;
+}
+.container-login4 ul {
+    list-style: none;
+}
+.container-login4 .check {
+    margin-right: 5px;
+}
+.container-login4 .sub {
+    text-decoration: none;
+}
+.container-login4 .sub:hover {
+    color: #4731b6;
+}
+.container-login4 .inp {
+    width: 300px;
+    height: 30px;
+    text-indent: 15px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid royalblue;
+}
+.container-login4 button {
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #8f93f6;
+}
+.container-login4 .reg {
+    color: white;
+    text-decoration: none;
+}
+.container-login4 button:hover {
+    cursor: pointer;
+    background-color: #4731b6;
+}
+
+
 .container-login2 img {
     height: 50px;
     border-bottom: 2px solid #ef5074;
@@ -73,7 +130,8 @@
 
 .container {
     width: 100%;
-    height: 100vh;
+    height: auto;
+    position: relative;
 }
 .nav {
     height: 76px;
@@ -81,6 +139,70 @@
     display: flex;
     justify-content: space-around;
     box-sizing: border-box;
+}
+.bars-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 260px;
+    background-color: #130f40;
+    transform: translateX(-100%);
+    transition: 0.5s ease-in-out;
+}
+.checkbox:checked ~ .bars-menu {
+    transform: translateX(0%);
+}
+.nav .checkbox {
+    display: none;
+}
+.bars-menu .bars {
+    position: absolute;
+    color: #ccc;
+    right: 0;
+    margin-right: 18px;
+}
+.bars-menu .logo1 {
+    position: absolute;
+    left: 0;
+}
+.bars-menu .logo1 img {
+    height: 50px;
+    margin-left: 15px;
+    margin-top: 12px;
+}
+.bars-menu ul {
+    list-style: none;
+    margin-top: 100px;
+}
+.bars-menu ul li {
+    margin-left: 45px ;
+    padding: 15px 0;
+}
+.bars-menu ul li a {
+    text-decoration: none;
+    color: #ccc;
+}
+.bars-menu ul li a:hover {
+    color: #8185e2;
+}
+.bars-menu ul li a i {
+    margin-right: 8px;
+}
+.select {
+    border: none;
+    background-color: #130f40;
+    color: #ccc;
+    font-size: 16px;
+    width: 150px;
+    cursor: pointer;
+}
+.select:hover {
+    color: #8185e2;
+}
+.select option {
+    color: #ccc;
+    font-size: 15px;
 }
 .nav .bars i {
     width: 20px;
@@ -112,7 +234,7 @@
     border: 1px solid royalblue;
 }
 .search i {
-    position: absolute;
+    position: absolute ;
     right: 10px;
     margin-top: 6px;
     margin-top: 28px;
@@ -308,8 +430,13 @@
         background-color: #fafbfe;
         margin-left: 2.5%;
     }
+    .right-1 {
+        display: none;
+    }
     .right-1 img {
         display: none;
+        width: 0px;
+        height: 0px;
     }
     .left2 {
         margin-left: 30px;
@@ -332,7 +459,6 @@
     .right1 {
         background-color: #f4f4f4;
         height: 200px;
-        display: block;
     }
     .content-right {
         width:95%;
@@ -347,7 +473,6 @@
     .right2 img {
         width: 80px;
         height: 80px;
-        display: block;
     }
     .right2 .ctv {
        margin-left: -8px;
@@ -376,5 +501,54 @@
         border-radius: 10px;
         margin: 0 auto;
         text-align: center;
+    }
+    .bars-menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 180px;
+        background-color: #130f40;
+        transform: translateX(-100%);
+        transition: 0.5s ease-in-out;
+    }
+    .bars-menu .bars {
+        position: absolute;
+        color: #ccc;
+        right: 0;
+        margin-right: 18px;
+    }
+    .bars-menu .logo1 {
+        position: absolute;
+        left: 0;
+    }
+    .bars-menu .logo1 img {
+        height: 50px;
+        margin-left: 15px;
+        margin-top: 12px;
+    }
+    .bars-menu ul li {
+        margin-left: 20px ;
+        padding: 10px 0;
+    }
+    .bars-menu ul {
+        list-style: none;
+        margin-top: 100px;
+    }
+    .bars-menu ul li a {
+        text-decoration: none;
+        color: #ccc;
+        font-size: 13px;
+    }
+    .select {
+        font-size: 13px;
+        width: 130px;
+    }
+    .container-login3 {
+        width: 100%;
+        height: 100vh;
+    }
+    .bars-menu ul li a:hover {
+        color: #8185e2;
     }
 }
